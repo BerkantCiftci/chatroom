@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Room</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      label {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+      }
+
+      input[type="text"] {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        border: 1px solid #ccc;
+        margin-right: 1rem;
+      }
+
+      button {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        background-color: #0077cc;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #005daa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Chat Room!</h1>
+    <label for="username">Enter your username:</label>
+    <input type="text" id="username">
+    <button onclick="enterChatRoom()">Enter Chat Room</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

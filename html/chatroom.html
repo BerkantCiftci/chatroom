@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Room - Chatting as {username}</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      #messages-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        overflow-y: scroll;
+        height: 400px;
+      }
+
+      .message {
+        margin-bottom: 1rem;
+      }
+
+      .message .username {
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+
+      .message .time {
+        font-size: 0.8rem;
+        color: #666;
+        margin-right: 0.5rem;
+      }
+
+      .message .text {
+        word-wrap: break-word;
+      }
+
+      form {
+        margin-top: 2rem;
+      }
+
+      label {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+      }
+
+      input[type="text"] {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        border: 1px solid #ccc;
+        margin-right: 1rem;
+      }
+
+      button[type="submit"] {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        background-color: #0077cc;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #005daa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Chat Room, {username}!</h1>
+    <div id="messages-container"></div>
+    <form id="message-form">
+      <label for="message">Type your message:</label>
+      <input type="text" id="message">
+      <button type="submit">Send</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
