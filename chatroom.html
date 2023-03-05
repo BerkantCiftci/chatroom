@@ -92,7 +92,8 @@
 
 <script>
 const urlParams = new URLSearchParams(window.location.search)
-const username = urlParams.get("username")
+// const username = urlParams.get("username")
+document.getElementById("username").textContent = urlParams.get("username")
 
 
 
